@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | BCN Centralitas</title>
+    <meta
+      name="description"
+      content="Solicita una propuesta o abre un ticket comercial con BCN Centralitas. Cuanto mejor nos cuentes tu caso, mejor podremos orientarte."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="contacto">
+    <div class="bg-orb bg-orb-left"></div>
+    <div class="bg-orb bg-orb-right"></div>
+    <div class="bg-grid"></div>
+
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <span>Cuanto mas detalle nos des, mejor podremos recomendar la estructura adecuada.</span>
+        <div class="utility-links">
+          <a class="mini-link" href="mailto:tickets@bcncentralitas.eu">tickets@bcncentralitas.eu</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a href="/" class="brand" aria-label="BCN Centralitas inicio">
+          <span class="brand-mark">BCN</span>
+          <span class="brand-text">
+            <strong>BCN Centralitas</strong>
+            <span>Telefonia cloud para empresas</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Navegacion principal">
+          <a href="/" data-page="inicio">Inicio</a>
+          <a href="/soluciones" data-page="soluciones">Soluciones</a>
+          <a href="/sectores" data-page="sectores">Sectores</a>
+          <a href="/tarifas" data-page="tarifas">Tarifas</a>
+          <a href="/contacto" data-page="contacto">Contacto</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button-link button-primary" href="/contacto">Solicitar propuesta</a>
+          <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+            Menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-intro">
+          <span class="eyebrow">Contacto</span>
+          <h1 class="page-title">Cuentanos como trabaja tu empresa y te ayudamos a plantear la centralita correcta.</h1>
+          <p>
+            Puedes usar este formulario para pedir propuesta, presentacion, portabilidad,
+            soporte o una nueva centralita. Al enviarlo se abrira tu correo con
+            la solicitud preparada para tickets@bcncentralitas.eu.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="card-grid two">
+            <article class="contact-card">
+              <span class="card-kicker">Email comercial</span>
+              <h3>tickets@bcncentralitas.eu</h3>
+              <p>Canal principal para solicitudes de presupuesto, informacion o puesta en marcha.</p>
+            </article>
+            <article class="contact-card">
+              <span class="card-kicker">Que conviene indicar</span>
+              <h3>Equipo, horarios, usuarios y tipo de llamadas.</h3>
+              <p>Cuanto mejor entendamos tu operativa, mas precisa sera la propuesta.</p>
+            </article>
+            <article class="contact-card">
+              <span class="card-kicker">Casos habituales</span>
+              <h3>Portabilidad, recepcion, colas, movilidad y soporte.</h3>
+              <p>Tambien podemos orientar en estructuras mas comerciales o con varias sedes.</p>
+            </article>
+            <article class="contact-card">
+              <span class="card-kicker">Respuesta</span>
+              <h3>Contacto comercial y analisis inicial.</h3>
+              <p>La idea es pasar rapido de la consulta a una recomendacion clara.</p>
+            </article>
+          </div>
+
+          <form id="contact-form" class="form-shell panel">
+            <div class="form-grid">
+              <label>
+                <span>Tipo de solicitud</span>
+                <select name="requestType" required>
+                  <option value="Presupuesto">Presupuesto</option>
+                  <option value="Presentacion">Presentacion</option>
+                  <option value="Portabilidad">Portabilidad</option>
+                  <option value="Soporte">Soporte</option>
+                  <option value="Nueva centralita">Nueva centralita</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Empresa</span>
+                <input type="text" name="company" placeholder="Nombre de la empresa" required />
+              </label>
+
+              <label>
+                <span>Persona de contacto</span>
+                <input type="text" name="name" placeholder="Tu nombre" required />
+              </label>
+
+              <label>
+                <span>Telefono</span>
+                <input type="tel" name="phone" placeholder="Telefono de contacto" required />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="tu@empresa.com" required />
+              </label>
+
+              <label>
+                <span>Tamano del equipo</span>
+                <select name="teamSize" required>
+                  <option value="1 a 5">1 a 5</option>
+                  <option value="6 a 15">6 a 15</option>
+                  <option value="16 a 50">16 a 50</option>
+                  <option value="Mas de 50">Mas de 50</option>
+                </select>
+              </label>
+
+              <label class="full">
+                <span>Que necesitas exactamente</span>
+                <textarea
+                  name="message"
+                  placeholder="Describe tu situacion: horarios, departamentos, numero actual, usuarios, si necesitas portabilidad, movilidad, grabacion o una recepcion mas profesional."
+                  required
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="form-footer">
+              <button class="button button-primary" type="submit">Preparar solicitud</button>
+              <p id="form-status" class="form-status">
+                Se abrira tu cliente de correo con la solicitud preparada para envio.
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-copy">
+          <strong>BCN Centralitas</strong>
+          <p>Contacto comercial para estudiar la centralita que mejor encaja con tu empresa.</p>
+        </div>
+        <div class="footer-links">
+          <a href="/">Inicio</a>
+          <a href="/soluciones">Soluciones</a>
+          <a href="/sectores">Sectores</a>
+          <a href="/tarifas">Tarifas</a>
+        </div>
+        <div class="footer-note">
+          <p><a href="mailto:tickets@bcncentralitas.eu">tickets@bcncentralitas.eu</a></p>
+          <p>&copy; <span data-current-year></span> BCN Centralitas</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

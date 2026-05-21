@@ -6,414 +6,305 @@
     <title>BCN Centralitas | Centralita virtual para empresas</title>
     <meta
       name="description"
-      content="Centralita virtual para empresas con IVR, colas, locuciones, movilidad y soporte. Pide propuesta o abre un ticket comercial desde la web."
+      content="Centralita virtual para empresas con IVR, colas, grabacion, movilidad e integraciones. BCN Centralitas te ayuda a atender mejor y vender con una imagen mas profesional."
     />
+    <meta property="og:title" content="BCN Centralitas | Centralita virtual para empresas" />
+    <meta
+      property="og:description"
+      content="Soluciones de centralita virtual para empresas que necesitan imagen, control y atencion profesional."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.bcncentralitas.eu/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
-  <body>
-    <div class="bg-glow bg-glow-left"></div>
-    <div class="bg-glow bg-glow-right"></div>
+  <body data-page="inicio">
+    <div class="bg-orb bg-orb-left"></div>
+    <div class="bg-orb bg-orb-right"></div>
     <div class="bg-grid"></div>
+
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <span>Soluciones de telefonia cloud para empresas que no pueden perder llamadas.</span>
+        <div class="utility-links">
+          <a class="mini-link" href="mailto:tickets@bcncentralitas.eu">tickets@bcncentralitas.eu</a>
+          <span>Atencion comercial y configuracion guiada</span>
+        </div>
+      </div>
+    </div>
 
     <header class="site-header">
       <div class="container nav-shell">
-        <a href="#top" class="brand" aria-label="BCN Centralitas">
+        <a href="/" class="brand" aria-label="BCN Centralitas inicio">
           <span class="brand-mark">BCN</span>
-          <span class="brand-text">Centralitas</span>
+          <span class="brand-text">
+            <strong>BCN Centralitas</strong>
+            <span>Telefonia cloud para empresas</span>
+          </span>
         </a>
 
         <nav class="main-nav" aria-label="Navegacion principal">
-          <a href="#soluciones">Soluciones</a>
-          <a href="#planes">Planes</a>
-          <a href="#proceso">Proceso</a>
-          <a href="#ticket">Ticket</a>
+          <a href="/" data-page="inicio">Inicio</a>
+          <a href="/soluciones" data-page="soluciones">Soluciones</a>
+          <a href="/sectores" data-page="sectores">Sectores</a>
+          <a href="/tarifas" data-page="tarifas">Tarifas</a>
+          <a href="/contacto" data-page="contacto">Contacto</a>
         </nav>
 
-        <a href="#ticket" class="nav-cta">Solicitar propuesta</a>
+        <div class="nav-actions">
+          <a class="button-link button-primary" href="/contacto">Solicitar propuesta</a>
+          <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+            Menu
+          </button>
+        </div>
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero-section">
-        <div class="container hero-layout">
+    <main>
+      <section class="home-hero">
+        <div class="container home-hero-layout">
           <div class="hero-copy">
-            <span class="eyebrow">Telefonia cloud con imagen premium</span>
-            <h1>La centralita virtual que hace que tu empresa suene mejor, venda mas y atienda sin caos.</h1>
-            <p class="hero-text">
-              Numeracion profesional, desvio inteligente, locuciones, IVR,
-              colas, grabacion y movilidad total en una propuesta elegante,
-              rapida y lista para convertir visitas en contactos reales.
+            <span class="eyebrow">Centralita virtual con enfoque comercial</span>
+            <h1 class="hero-title">Atiende mejor, proyecta una imagen mas seria y no dejes escapar llamadas importantes.</h1>
+            <p>
+              BCN Centralitas ayuda a empresas que necesitan una centralita moderna,
+              flexible y facil de gestionar. Menus IVR, colas, grabacion,
+              movilidad, desvio inteligente y una experiencia ordenada tanto
+              para el cliente como para el equipo.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#ticket">Quiero una demo</a>
-              <a class="button button-secondary" href="#planes">Ver soluciones</a>
+              <a class="button button-primary" href="/contacto">Pedir asesoramiento</a>
+              <a class="button button-secondary" href="/soluciones">Ver soluciones</a>
             </div>
 
             <ul class="hero-points">
-              <li>Alta rapida y sin centralitas fisicas</li>
-              <li>Portabilidad y configuracion guiada</li>
-              <li>Pensada para despachos, clinicas, ventas y soporte</li>
+              <li>Implantacion sencilla sin centralita fisica</li>
+              <li>Configuracion profesional adaptada a tu operativa</li>
+              <li>Preparada para equipos comerciales, soporte y recepcion</li>
             </ul>
           </div>
 
-          <div class="hero-visual">
-            <div class="glass-card dashboard-card">
-              <div class="card-topline">
-                <span>Panel de atencion</span>
-                <span class="status-dot">Disponible</span>
-              </div>
-
-              <div class="hero-metric-grid">
-                <article>
-                  <span>Extensiones</span>
-                  <strong>12</strong>
-                </article>
-                <article>
-                  <span>IVR</span>
-                  <strong>Multiopcion</strong>
-                </article>
-                <article>
-                  <span>Grabacion</span>
-                  <strong>Cloud</strong>
-                </article>
-                <article>
-                  <span>Movilidad</span>
-                  <strong>Total</strong>
-                </article>
-              </div>
-
-              <div class="signal-card">
-                <div>
-                  <span class="mini-label">Enrutado inteligente</span>
-                  <strong>Comercial, soporte y urgencias en un solo flujo</strong>
-                </div>
-                <span class="signal-pill">24/7</span>
-              </div>
+          <div class="hero-panel panel">
+            <div class="hero-panel-grid">
+              <article class="metric-card">
+                <span>Recepcion</span>
+                <strong>IVR profesional</strong>
+              </article>
+              <article class="metric-card">
+                <span>Continuidad</span>
+                <strong>Desvios inteligentes</strong>
+              </article>
+              <article class="metric-card">
+                <span>Movilidad</span>
+                <strong>Equipo conectado</strong>
+              </article>
+              <article class="metric-card">
+                <span>Control</span>
+                <strong>Grabacion y trazabilidad</strong>
+              </article>
             </div>
 
-            <div class="floating-note note-one">
-              <span>Locucion de bienvenida</span>
-              <strong>Imagen seria desde la primera llamada</strong>
+            <div class="hero-signal">
+              <div>
+                <span class="info-label">Arquitectura recomendada</span>
+                <strong>Recepcion + comercial + soporte + fuera de horario</strong>
+              </div>
+              <span class="signal-pill">Cloud</span>
             </div>
 
-            <div class="floating-note note-two">
+            <div class="hero-note-stack">
+              <article class="stack-card">
+                <span class="info-label">Pensada para crecer</span>
+                <strong>Anade usuarios, sedes y numeros sin rehacer todo el sistema.</strong>
+              </article>
+              <article class="stack-card">
+                <span class="info-label">Contacto rapido</span>
+                <strong>Solicita propuesta o abre ticket comercial desde la propia web.</strong>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="container">
+          <div class="trust-band">
+            <p>
+              Una web corporativa clara, directa y preparada para captar empresas
+              que buscan una centralita fiable, profesional y facil de implantar.
+            </p>
+            <div class="trust-list">
+              <span>IVR y locuciones</span>
+              <span>Colas y horarios</span>
+              <span>Movilidad total</span>
               <span>Integraciones</span>
-              <strong>CRM, WhatsApp, email y equipos moviles</strong>
+              <span>Portabilidad</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="trust-strip">
-        <div class="container trust-layout">
-          <p>
-            Una web estatica premium para presentar una centralita moderna con
-            claridad, confianza y una accion comercial directa.
-          </p>
-          <div class="trust-items">
-            <span>IVR profesional</span>
-            <span>Colas y desvio</span>
-            <span>Grabacion</span>
-            <span>Soporte cercano</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="soluciones" class="section-block">
+      <section class="section">
         <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Soluciones</span>
-            <h2>Todo lo que necesita una empresa para atender con orden y transmitir una imagen impecable.</h2>
-            <p>
-              La pagina esta enfocada a vender: mensaje claro, visual potente,
-              cero ruido y CTA muy visible para pedir propuesta o abrir ticket.
+          <div class="section-header">
+            <span class="eyebrow">Lo que aporta a tu empresa</span>
+            <h2 class="section-title">Una estructura de llamadas mas ordenada, mas profesional y mucho mas facil de gestionar.</h2>
+            <p class="section-lead">
+              La centralita ya no es solo telefonia. Es imagen, control
+              operativo, continuidad y capacidad de responder mejor en cada
+              punto de contacto.
             </p>
           </div>
 
-          <div class="feature-grid">
-            <article class="feature-card feature-card-large">
-              <span class="card-kicker">Recepcion impecable</span>
-              <h3>Menus, locuciones y reglas de desvio para no perder oportunidades.</h3>
-              <p>
-                Da la bienvenida correcta, filtra llamadas por departamento,
-                horario o prioridad y evita que tus clientes choquen contra una
-                linea desordenada.
-              </p>
+          <div class="card-grid three">
+            <article class="card featured">
+              <span class="card-kicker">Imagen de marca</span>
+              <h3>Una recepcion seria desde la primera llamada.</h3>
+              <p>Locuciones, opciones por departamento y un flujo claro para que la empresa transmita orden y profesionalidad.</p>
             </article>
-
-            <article class="feature-card">
-              <span class="card-kicker">Movilidad real</span>
-              <h3>Atiende desde movil, softphone o puesto fijo.</h3>
-              <p>
-                Tu equipo trabaja desde donde haga falta sin perder identidad
-                corporativa ni control.
-              </p>
+            <article class="card">
+              <span class="card-kicker">Atencion al cliente</span>
+              <h3>Menos perdidas y menos caos interno.</h3>
+              <p>Rutas por horario, colas y desvio inteligente para no dejar llamadas sin atender.</p>
             </article>
-
-            <article class="feature-card">
-              <span class="card-kicker">Seguimiento</span>
-              <h3>Grabacion, trazabilidad y contexto de cada llamada.</h3>
-              <p>
-                Mejora ventas y soporte con informacion util y una operativa mas
-                profesional.
-              </p>
+            <article class="card">
+              <span class="card-kicker">Movilidad</span>
+              <h3>Tu equipo trabaja desde cualquier lugar.</h3>
+              <p>Movil, softphone o puesto fijo con la misma identidad telefonica.</p>
             </article>
-
-            <article class="feature-card">
+            <article class="card">
+              <span class="card-kicker">Control</span>
+              <h3>Grabacion y seguimiento de llamadas.</h3>
+              <p>Mayor trazabilidad para ventas, soporte, formacion y calidad de servicio.</p>
+            </article>
+            <article class="card">
               <span class="card-kicker">Escalabilidad</span>
-              <h3>Anade usuarios, sedes y numeros sin rehacer la solucion.</h3>
-              <p>
-                Empieza simple y evoluciona a una operativa mas grande cuando tu
-                negocio lo necesite.
-              </p>
+              <h3>Crece sin desmontar el sistema.</h3>
+              <p>Anade usuarios, numeros, departamentos o sedes cuando tu negocio lo necesite.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Acompanamiento</span>
+              <h3>Configuracion ajustada a tu caso real.</h3>
+              <p>No se trata solo de activar lineas, sino de montar una operativa que funcione de verdad.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section-block section-block-soft">
-        <div class="container benefit-layout">
-          <div class="benefit-copy">
-            <span class="eyebrow">Diseno actual</span>
-            <h2>Una landing elegante, oscura y muy cuidada para que el dominio ya se vea de produccion.</h2>
+      <section class="section">
+        <div class="container split-layout">
+          <div class="split-copy">
+            <span class="eyebrow">Sectores</span>
+            <h2 class="section-title small">No todas las empresas atienden igual. La estructura debe adaptarse al tipo de negocio.</h2>
             <p>
-              He sustituido la simulacion por una pagina comercial premium con
-              estetica tipo SaaS/B2B actual: gradientes, glassmorphism, tipografia
-              grande y secciones muy limpias.
+              Hemos organizado la web por sectores para que sea facil entender
+              como puede encajar la centralita en clinicas, despachos,
+              inmobiliarias, talleres, comercios o equipos comerciales.
             </p>
+            <div class="cta-actions">
+              <a class="button button-primary" href="/sectores">Explorar sectores</a>
+            </div>
           </div>
 
-          <div class="benefit-list">
-            <article>
-              <strong>Mensaje comercial directo</strong>
-              <p>Beneficios claros, sin bloques innecesarios ni distracciones.</p>
+          <div class="card-grid two">
+            <article class="card">
+              <span class="card-kicker">Clinicas y centros</span>
+              <h3>Recepcion ordenada y citas mejor filtradas.</h3>
+              <p>Ideal para separar urgencias, administracion y consultas de pacientes.</p>
             </article>
-            <article>
-              <strong>Preparada para dominio</strong>
-              <p>Estatica, ligera y perfecta para desplegar en Vercel sin build complejo.</p>
+            <article class="card">
+              <span class="card-kicker">Despachos e inmobiliarias</span>
+              <h3>Mas control de oportunidades y mejor presencia.</h3>
+              <p>Atencion comercial limpia y trazabilidad sobre llamadas entrantes.</p>
             </article>
-            <article>
-              <strong>CTA de ticket o propuesta</strong>
-              <p>La accion principal queda visible tanto arriba como en el formulario final.</p>
+            <article class="card">
+              <span class="card-kicker">Talleres y servicios</span>
+              <h3>Evita llamadas perdidas en horas de trabajo intenso.</h3>
+              <p>Desvios y colas para no dejar al cliente sin respuesta.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Equipos de ventas</span>
+              <h3>Canaliza mejor leads, soporte y postventa.</h3>
+              <p>Una centralita mas pensada para vender y atender con rapidez.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="planes" class="section-block">
+      <section class="section">
         <div class="container">
-          <div class="section-heading compact-center">
-            <span class="eyebrow">Planes</span>
-            <h2>Una propuesta para cada etapa del negocio.</h2>
+          <div class="section-header">
+            <span class="eyebrow">Proceso de trabajo</span>
+            <h2 class="section-title">Una implantacion sencilla, pero bien planteada.</h2>
           </div>
 
-          <div class="pricing-grid">
-            <article class="pricing-card">
-              <span class="plan-tag">Esencial</span>
-              <h3>Para equipos pequenos</h3>
-              <p>La base ideal para sonar profesional desde el primer dia.</p>
-              <ul>
-                <li>Numeracion y bienvenida</li>
-                <li>Usuarios y extensiones</li>
-                <li>Desvio por horario</li>
-                <li>Puesta en marcha guiada</li>
-              </ul>
-              <a href="#ticket" class="text-link">Pedir este plan</a>
+          <div class="process-grid">
+            <article class="process-card">
+              <span class="process-number">01</span>
+              <h3>Analisis de operativa</h3>
+              <p>Revisamos horarios, departamentos, volumen de llamadas y necesidades reales del equipo.</p>
             </article>
-
-            <article class="pricing-card pricing-card-featured">
-              <span class="plan-tag">Pro</span>
-              <h3>La opcion mas completa</h3>
-              <p>Ideal para empresas que quieren mejorar ventas, soporte e imagen.</p>
-              <ul>
-                <li>IVR multicapa</li>
-                <li>Colas y grabacion</li>
-                <li>Portabilidad y configuracion avanzada</li>
-                <li>Mejor experiencia comercial</li>
-              </ul>
-              <a href="#ticket" class="text-link">Quiero propuesta</a>
+            <article class="process-card">
+              <span class="process-number">02</span>
+              <h3>Diseno del flujo</h3>
+              <p>Definimos bienvenida, menus, colas, desvios, movilidad e integraciones necesarias.</p>
             </article>
-
-            <article class="pricing-card">
-              <span class="plan-tag">Enterprise</span>
-              <h3>Para operaciones exigentes</h3>
-              <p>Mas control, mas sedes, mas personalizacion y mas integracion.</p>
-              <ul>
-                <li>Arquitectura a medida</li>
-                <li>Flujos complejos</li>
-                <li>Integraciones</li>
-                <li>Acompanamiento consultivo</li>
-              </ul>
-              <a href="#ticket" class="text-link">Hablar con un asesor</a>
+            <article class="process-card">
+              <span class="process-number">03</span>
+              <h3>Puesta en marcha</h3>
+              <p>Se activa la solucion y se afina para que la empresa empiece a operar con seguridad.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="proceso" class="section-block section-block-soft">
+      <section class="section">
         <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Proceso</span>
-            <h2>De la idea a una centralita operativa en tres pasos.</h2>
-          </div>
-
-          <div class="steps-grid">
-            <article class="step-card">
-              <span class="step-number">01</span>
-              <h3>Nos cuentas el caso</h3>
-              <p>Equipo, horarios, departamentos, numeracion y objetivos.</p>
-            </article>
-            <article class="step-card">
-              <span class="step-number">02</span>
-              <h3>Definimos la solucion</h3>
-              <p>Preparamos estructura, rutas, locuciones y extras necesarios.</p>
-            </article>
-            <article class="step-card">
-              <span class="step-number">03</span>
-              <h3>Activamos y afinamos</h3>
-              <p>Dejamos todo listo para empezar a atender y vender mejor.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="ticket" class="section-block">
-        <div class="container contact-layout">
-          <div class="contact-copy">
-            <span class="eyebrow">Abrir ticket o pedir propuesta</span>
-            <h2>Cuanto mejor nos expliques lo que necesitas, mejor te lo preparamos.</h2>
-            <p>
-              Este formulario prepara un ticket comercial por email. Sirve para
-              pedir presupuesto, demo, portabilidad, soporte o una nueva
-              centralita.
+          <div class="cta-banner panel">
+            <span class="eyebrow">Preparado para empezar</span>
+            <h2>Si ya sabes que necesitas una centralita mejor, el siguiente paso es contarnos tu caso.</h2>
+            <p class="section-lead">
+              Solicita una propuesta o abre un ticket comercial para que podamos
+              preparar una estructura adaptada a tu empresa.
             </p>
-
-            <div class="contact-note">
-              <strong>Email de recepcion</strong>
-              <p>
-                <a href="mailto:tickets@bcncentralitas.eu"
-                  >tickets@bcncentralitas.eu</a
-                >
-              </p>
+            <div class="cta-actions">
+              <a class="button button-primary" href="/contacto">Contactar ahora</a>
+              <a class="button button-secondary" href="/tarifas">Ver opciones</a>
             </div>
-          </div>
-
-          <form id="ticket-form" class="ticket-form">
-            <div class="field-row">
-              <label>
-                <span>Tipo de solicitud</span>
-                <select name="requestType" required>
-                  <option value="Presupuesto">Presupuesto</option>
-                  <option value="Demo">Demo</option>
-                  <option value="Portabilidad">Portabilidad</option>
-                  <option value="Soporte">Soporte</option>
-                  <option value="Nueva centralita">Nueva centralita</option>
-                </select>
-              </label>
-
-              <label>
-                <span>Empresa</span>
-                <input
-                  type="text"
-                  name="company"
-                  placeholder="Nombre de la empresa"
-                  required
-                />
-              </label>
-            </div>
-
-            <div class="field-row">
-              <label>
-                <span>Persona de contacto</span>
-                <input type="text" name="name" placeholder="Tu nombre" required />
-              </label>
-
-              <label>
-                <span>Telefono</span>
-                <input type="tel" name="phone" placeholder="600 000 000" required />
-              </label>
-            </div>
-
-            <div class="field-row single-column">
-              <label>
-                <span>Email</span>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="tu@empresa.com"
-                  required
-                />
-              </label>
-            </div>
-
-            <div class="field-row single-column">
-              <label>
-                <span>Que necesitas exactamente</span>
-                <textarea
-                  name="message"
-                  rows="6"
-                  placeholder="Ejemplo: somos 8 personas, queremos locucion profesional, 2 departamentos, portabilidad y atencion desde movil."
-                  required
-                ></textarea>
-              </label>
-            </div>
-
-            <div class="form-actions">
-              <button type="submit" class="button button-primary">
-                Abrir ticket ahora
-              </button>
-              <p id="form-status" class="form-status">
-                Se abrira tu cliente de correo con el ticket preparado.
-              </p>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <section class="section-block faq-block">
-        <div class="container">
-          <div class="section-heading compact-center">
-            <span class="eyebrow">FAQ</span>
-            <h2>Dudas habituales antes de contratar.</h2>
-          </div>
-
-          <div class="faq-grid">
-            <article>
-              <h3>Se puede conservar el numero actual</h3>
-              <p>Si, la idea es estudiar la portabilidad y preparar una migracion limpia.</p>
-            </article>
-            <article>
-              <h3>Sirve para trabajar desde movil</h3>
-              <p>Si, esa es una de las ventajas principales de una centralita cloud moderna.</p>
-            </article>
-            <article>
-              <h3>La web ya vale para produccion</h3>
-              <p>Si, esta planteada como landing estatica premium lista para dominio propio.</p>
-            </article>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-layout">
-        <div>
+      <div class="container footer-grid">
+        <div class="footer-copy">
           <strong>BCN Centralitas</strong>
-          <p>Telefonia cloud con presencia visual a la altura de una marca seria.</p>
+          <p>
+            Centralita virtual para empresas que necesitan una atencion mas
+            profesional, mejor organizacion de llamadas y una imagen de marca
+            consistente.
+          </p>
         </div>
-        <div>
-          <p>&copy; <span id="current-year"></span> BCN Centralitas</p>
+        <div class="footer-links">
+          <a href="/soluciones">Soluciones</a>
+          <a href="/sectores">Sectores</a>
+          <a href="/tarifas">Tarifas</a>
+          <a href="/contacto">Contacto</a>
+        </div>
+        <div class="footer-note">
+          <p>Contacto: <a href="mailto:tickets@bcncentralitas.eu">tickets@bcncentralitas.eu</a></p>
+          <p>&copy; <span data-current-year></span> BCN Centralitas</p>
         </div>
       </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
