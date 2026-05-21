@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseDesk | Call Center Test Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">VERCEL TEST SITE</span>
+          <h1>Call center dashboard with live mock traffic.</h1>
+          <p>
+            A lightweight demo site that simulates inbound queue pressure,
+            active agents, SLA movement and campaign changes so you can test
+            the Vercel MCP flow end to end.
+          </p>
+          <div class="hero-actions">
+            <button id="toggle-live" class="button button-primary">
+              Pause live feed
+            </button>
+            <button id="rotate-campaign" class="button button-secondary">
+              Switch campaign
+            </button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="hero-card-label">Current campaign</p>
+          <h2 id="campaign-name">Retention Squad</h2>
+          <p id="campaign-copy" class="hero-card-copy">
+            Priority queue for high-value customers with renewal risk.
+          </p>
+          <div class="hero-card-stats">
+            <div>
+              <span>Calls handled</span>
+              <strong id="calls-handled">1,284</strong>
+            </div>
+            <div>
+              <span>Average score</span>
+              <strong id="average-score">91%</strong>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="panel metric-grid" aria-label="Live metrics">
+          <article class="metric-card">
+            <span class="metric-label">Calls in queue</span>
+            <strong id="queue-size" class="metric-value">18</strong>
+            <span id="queue-trend" class="metric-trend positive"
+              >-2 in the last minute</span
+            >
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Agents online</span>
+            <strong id="agents-online" class="metric-value">42</strong>
+            <span id="agent-trend" class="metric-trend">6 on wrap-up</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">SLA under 20s</span>
+            <strong id="sla-score" class="metric-value">89%</strong>
+            <span id="sla-trend" class="metric-trend positive"
+              >Above target</span
+            >
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Abandon risk</span>
+            <strong id="risk-score" class="metric-value">Low</strong>
+            <span id="risk-trend" class="metric-trend positive"
+              >Stable pacing</span
+            >
+          </article>
+        </section>
+
+        <section class="dashboard-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-kicker">Agent floor</p>
+                <h3>Real-time occupancy</h3>
+              </div>
+              <span id="live-indicator" class="live-indicator">Live</span>
+            </div>
+            <div id="agent-list" class="agent-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-kicker">Queue monitor</p>
+                <h3>Traffic mix</h3>
+              </div>
+            </div>
+            <div class="traffic-chart">
+              <div class="traffic-bar-card">
+                <div class="traffic-label-row">
+                  <span>Billing</span>
+                  <strong id="billing-value">31%</strong>
+                </div>
+                <div class="bar-track">
+                  <div id="billing-bar" class="bar-fill billing"></div>
+                </div>
+              </div>
+              <div class="traffic-bar-card">
+                <div class="traffic-label-row">
+                  <span>Sales</span>
+                  <strong id="sales-value">27%</strong>
+                </div>
+                <div class="bar-track">
+                  <div id="sales-bar" class="bar-fill sales"></div>
+                </div>
+              </div>
+              <div class="traffic-bar-card">
+                <div class="traffic-label-row">
+                  <span>Technical</span>
+                  <strong id="tech-value">42%</strong>
+                </div>
+                <div class="bar-track">
+                  <div id="tech-bar" class="bar-fill tech"></div>
+                </div>
+              </div>
+            </div>
+            <div class="ticker">
+              <span class="ticker-label">Smart routing</span>
+              <p id="ticker-copy">
+                AI routing is balancing tech support overflow to the remote
+                backup pod.
+              </p>
+            </div>
+          </section>
+
+          <section class="panel panel-wide">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-kicker">Ops feed</p>
+                <h3>Latest call center activity</h3>
+              </div>
+            </div>
+            <ul id="activity-feed" class="activity-feed"></ul>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
